@@ -131,15 +131,6 @@ def count_coins(change):
     >>> # ban iteration
     >>> check(HW_SOURCE_FILE, 'count_coins', ['While', 'For'])
     True
-    15は6通り
-    10を使い、最大コイン10の元で15 - 10 = 5を満たす場合の数
-    10を使わず、最大コイン5の元で15を満たす場合の数
-    (10, 5)
-    (10, 1, 1, 1, 1, 1)
-    (5, 5, 5)
-    (5, 5, 1, 1, 1, 1, 1)
-    (5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-    (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
     """
     "*** YOUR CODE HERE ***"
     def constrained_count_small(change, largest_coin):
