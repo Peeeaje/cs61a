@@ -336,7 +336,7 @@ def fastest_words(match):
     f = lambda times: lambda index: [times[i][index] for i in range(len(times))]
     f_a = f(get_all_times(match))
 
-    l = [] * len(player_indices)
+    l: list[list] = [] * len(player_indices)
     for i in word_indices:
         time_list = f_a(i)
         min_time = min(time_list)
